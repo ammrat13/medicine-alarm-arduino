@@ -53,10 +53,13 @@ void setup() {
   
   //Set the current time and required alarms.
   //CHANGE ALL OF THIS AS NEEDED!!!!!!!!!!!!!!!!!!!!!1
-  setTime(0, 0, 0, 1, 1, 2016);                 //00:00:00 1 Jan 2016
-                                                //Time of activation
-                                                //CHANGE THIS!!!!!!!!
-                                                
+  setTime(23,20, 0, 1, 1, 2016);                 //11:15:00 PM 1 Jan 2016
+                                                 //Time of activation
+                                                 //CHANGE THIS!!!!!!!!
+
+  Alarm.alarmOnce(23,20,15, onAlarmTrigger); //11:20:00 PM Once
+                                             //CHANGE THIS!!!!!!!
+  
   Alarm.alarmRepeat( 6, 0, 0, onAlarmTrigger); //06:00:00 AM Daily
   Alarm.alarmRepeat(16, 0, 0, onAlarmTrigger); //04:00:00 PM Daily
   Alarm.alarmRepeat(21, 0, 0, onAlarmTrigger); //09:00:00 PM Daily
