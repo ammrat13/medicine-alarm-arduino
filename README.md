@@ -6,8 +6,9 @@ Required Hardware:<br/>
 <ul>
 	<li>Arduino UNO</li>
 	<li>Piezo buzzer (https://www.sparkfun.com/products/7950)</li>
-	<li>Lithium Ion Batter with USB charger (We used one with 
-			7800mAh)</li>
+	<li>
+		Rechargeable battery with USB (http://www.voltaicsystems.com/v44)
+	</li>
 </ul>
 
 Required Libraries:<br/>
