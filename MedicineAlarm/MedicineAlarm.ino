@@ -48,17 +48,18 @@
 void setup() {
 
   //For debugging.
-  Serial.begin(9600);
+  //Serial.begin(9600);
   
   //Set the current time and required alarms.
-  //CHANGE ALL OF THIS AS NEEDED!!!!!!!!!!!!!!!!!!!!!!
+  
+  //CHANGE ALL OF THIS AS NEEDED!
 
-  //CHANGE THIS TO CURRENT TIME!!!!!!!!!!!!!!!!!!!!!!!
-  setTime(20, 3, 0, 1, 1, 2016);                 //08:57:00 PM 1 Jan 2016
-                                                 //Time of activation
-                                                 //CHANGE THIS!!!!!!!!
+  //CHANGE THIS TO ACTIVATION TIME!
+  setTime(19,24, 0, 1, 1, 2016);  //07:24:00 PM 1 Jan 2016
+                                  //Time of activation
+                                  //CHANGE THIS!!!!!!!!
 
-  Alarm.alarmOnce(20, 3,15, onAlarmTrigger); //08:57:00 PM Once
+  Alarm.alarmOnce(19,24,15, onAlarmTrigger); //07:24:15 PM Once
   
   Alarm.alarmRepeat(16, 0, 0, onAlarmTrigger); //04:00:00 PM Daily
   Alarm.alarmRepeat(21, 0, 0, onAlarmTrigger); //09:00:00 PM Daily
@@ -78,9 +79,9 @@ void loop() {
 //Function to be called when an alarm goes off
 void onAlarmTrigger(){
 
-  Serial.println("\nTriggered");
-  printTime();
-  Serial.println("Doing...");
+  //Serial.println("\nTriggered");
+  //printTime();
+  //Serial.println("Doing...");
   
   //Generate a tone on the pin with the speaker
   tone(12, 1000, 5000);
@@ -88,7 +89,7 @@ void onAlarmTrigger(){
 							 //want alarm going off while we play our tone
   noTone(12);
 
-  Serial.println("Done\n");
+  //Serial.println("Done\n");
   
 }
 
