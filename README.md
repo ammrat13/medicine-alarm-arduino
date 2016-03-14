@@ -1,6 +1,7 @@
 # medicine-alarm-arduino
 An arduino circuit that goes off at cetain times to remind people to 
-take their medicine.<br/><br/>
+take their medicine. This was made for my sister's science fair 
+project.<br/><br/>
 
 Required Hardware:<br/>
 <ul>
