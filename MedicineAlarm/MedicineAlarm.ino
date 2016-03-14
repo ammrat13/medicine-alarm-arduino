@@ -55,11 +55,11 @@ void setup() {
   //CHANGE ALL OF THIS AS NEEDED!
 
   //CHANGE THIS TO ACTIVATION TIME!
-  setTime(19,24, 0, 1, 1, 2016);  //07:24:00 PM 1 Jan 2016
+  setTime(14, 5, 0, 1, 1, 2016);  //02:05:00 PM 1 Jan 2016
                                   //Time of activation
                                   //CHANGE THIS!!!!!!!!
 
-  Alarm.alarmOnce(19,24,15, onAlarmTrigger); //07:24:15 PM Once
+  Alarm.alarmOnce(14, 5,15, onAlarmTrigger); //15s after activation
   
   Alarm.alarmRepeat(16, 0, 0, onAlarmTrigger); //04:00:00 PM Daily
   Alarm.alarmRepeat(21, 0, 0, onAlarmTrigger); //09:00:00 PM Daily
@@ -71,7 +71,7 @@ void loop() {
 
   //For debugging
   //Print the current time to serial.
-  printTime();
+  //printTime();
   
   Alarm.delay(1000);  //DO NOT, UNDER ANY CIRCUMSTANCES, USE delay()
 }
