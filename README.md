@@ -1,10 +1,6 @@
 # medicine-alarm-arduino
-<h2>**FINISHED**</h2>
-Since this project was only for a science fair, and it is now over,
-development will no longer continue. All files will be kept up, but
-no updates will be made.<hr/><br/>
 
-An arduino circuit that goes off at cetain times to remind people to 
+**FINISHED:** An arduino circuit that goes off at cetain times to remind people to 
 take their medicine. This was made for my sister's science fair 
 project.<hr/>
 
